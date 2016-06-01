@@ -1,4 +1,4 @@
-| http://exercism.io/exercises/csharp/hamming/readme
+|> http://exercism.io/exercises/csharp/hamming/readme
 
 #Hamming
 Write a program that can calculate the Hamming difference between two DNA strands.
