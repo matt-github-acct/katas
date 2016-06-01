@@ -24,3 +24,34 @@ The Hamming distance between these two DNA strands is 7.
 The Hamming distance is only defined for sequences of equal length.
 
 #Test Cases
+First String:  ""
+Second String: ""
+Expected Value: 0
+
+First String:  "A"
+Second String: "B"
+Expected Value: 1
+
+First String:  "A"
+Second String: "A"
+Expected Value: 1
+
+First String:  "GGACTGA"
+Second String: "GGACTGA"
+Expected Value: 0
+
+First String:  "ACT"
+Second String: "GGA"
+Expected Value: 3
+
+First String:  "GGACGGATTCTG"
+Second String: "AGGACGGATTCT"
+Expected Value: 9
+
+First String:  "GGACG"
+Second String: "GGTCG"
+Expected Value: 1
+
+First String:  "ACCAGGG"
+Second String: "ACTATGG"
+Expected Value: 2
