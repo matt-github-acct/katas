@@ -17,3 +17,8 @@ CATCGTAATGACGGCCT
 ^ ^ ^  ^ ^    ^^
 ```
 The Hamming distance between these two DNA strands is 7.
+
+#Note
+The Hamming distance is only defined for sequences of equal length.
+
+#Test Cases
