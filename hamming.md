@@ -36,7 +36,7 @@ Expected Value: 1
 
 First String:  "A"
 Second String: "A"
-Expected Value: 1
+Expected Value: 0
 
 First String:  "GGACTGA"
 Second String: "GGACTGA"
