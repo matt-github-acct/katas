@@ -57,4 +57,8 @@ Expected Value: 1
 First String:  "ACCAGGG"
 Second String: "ACTATGG"
 Expected Value: 2
+
+First String:  "GGGHHHHEEEEEEEEEEEE"
+Second String: "A"
+Expected Value: 0
 ```
