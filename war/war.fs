@@ -15,8 +15,35 @@ type Rank =
 
 type Card = Suit * Rank
 
-let playRound (card1:Card,card2:Card) =
-    failwith "not implemented: winning card"
+let suitValue card = 
+    match fst card with
+    | Spade -> 1
+    | Club -> 2
+    | Diamond -> 3
+    | Heart -> 4
 
-let playGame (hand1:Card list, hand2:Card list) =
-    failwith "not implemented: game winner"
+let cardValue card = 
+    suitValue card +
+    match snd card with
+    | Jack -> 11
+    | Queen -> 12
+    | King -> 13
+    | Ace -> 14
+    | Value x -> x
+
+let playRound (card1,card2) =
+    if (cardValue card1) > (cardValue card2) then 1 else 2
+
+let rec playGame (hand1:Card list, hand2:Card list) =
+
+    
+    match (hand1, hand2) with
+    | [], _ -> 2
+    | _, [] -> 1
+    | _ ->
+        match playRound (List.head hand1, List.head hand2) with
+            | 1 -> 
+                playGame (hand1 @ [List.head hand2], List.tail hand2)
+            | 2 ->
+                playGame (List.tail hand1, hand2 @ [List.head hand1])
+    
